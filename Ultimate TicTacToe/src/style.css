@@ -1,0 +1,27 @@
+#mainTable{
+    border:2px solid;
+    width:300px;
+    height:300px;
+    margin:auto;
+}
+
+.smallTable{
+    width:75px;
+    height:75px;
+    margin:auto;
+}
+
+/*.box{
+    background-color:white;
+    border:none;
+    width:20px;
+    height:20px;
+}*/
+
+.clickable {
+    background-color: aqua;
+}
+
+.unclickable {
+    background-color: none;
+}

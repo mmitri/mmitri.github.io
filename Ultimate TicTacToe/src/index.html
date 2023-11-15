@@ -1,0 +1,219 @@
+<!--
+  Mark Mitri      | mame23@lehigh.edu
+  Matthew Calvin  | mcd223@lehigh.edu
+  CSE264-010-SP23 | Final Project
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ultimate Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+
+  <body>
+    <div id="container">
+        <table id="mainTable" rules="all">
+            <tbody>
+                <tr>
+                    <td>
+                        <div id="bigBox0" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "00" type="button"></button></td>
+                                    <td><button class="box" id= "01" type="button"></button></td>
+                                    <td><button class="box" id= "02" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "03" type="button"></button></td>
+                                    <td><button class="box" id= "04" type="button"></button></td>
+                                    <td><button class="box" id= "05" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "06" type="button"></button></td>
+                                    <td><button class="box" id= "07" type="button"></button></td>
+                                    <td><button class="box" id= "08" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="bigBox1" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "10" type="button"></button></td>
+                                    <td><button class="box" id= "11" type="button"></button></td>
+                                    <td><button class="box" id= "12" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "13" type="button"></button></td>
+                                    <td><button class="box" id= "14" type="button"></button></td>
+                                    <td><button class="box" id= "15" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "16" type="button"></button></td>
+                                    <td><button class="box" id= "17" type="button"></button></td>
+                                    <td><button class="box" id= "18" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="bigBox2" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "20" type="button"></button></td>
+                                    <td><button class="box" id= "21" type="button"></button></td>
+                                    <td><button class="box" id= "22" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "23" type="button"></button></td>
+                                    <td><button class="box" id= "24" type="button"></button></td>
+                                    <td><button class="box" id= "25" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "26" type="button"></button></td>
+                                    <td><button class="box" id= "27" type="button"></button></td>
+                                    <td><button class="box" id= "28" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="bigBox3" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "30" type="button"></button></td>
+                                    <td><button class="box" id= "31" type="button"></button></td>
+                                    <td><button class="box" id= "32" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "33" type="button"></button></td>
+                                    <td><button class="box" id= "34" type="button"></button></td>
+                                    <td><button class="box" id= "35" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "36" type="button"></button></td>
+                                    <td><button class="box" id= "37" type="button"></button></td>
+                                    <td><button class="box" id= "38" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="bigBox4" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "40" type="button"></button></td>
+                                    <td><button class="box" id= "41" type="button"></button></td>
+                                    <td><button class="box" id= "42" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "43" type="button"></button></td>
+                                    <td><button class="box" id= "44" type="button"></button></td>
+                                    <td><button class="box" id= "45" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "46" type="button"></button></td>
+                                    <td><button class="box" id= "47" type="button"></button></td>
+                                    <td><button class="box" id= "48" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="bigBox5" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "50" type="button"></button></td>
+                                    <td><button class="box" id= "51" type="button"></button></td>
+                                    <td><button class="box" id= "52" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "53" type="button"></button></td>
+                                    <td><button class="box" id= "54" type="button"></button></td>
+                                    <td><button class="box" id= "55" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "56" type="button"></button></td>
+                                    <td><button class="box" id= "57" type="button"></button></td>
+                                    <td><button class="box" id= "58" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div id="bigBox6" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "60" type="button"></button></td>
+                                    <td><button class="box" id= "61" type="button"></button></td>
+                                    <td><button class="box" id= "62" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "63" type="button"></button></td>
+                                    <td><button class="box" id= "64" type="button"></button></td>
+                                    <td><button class="box" id= "65" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "66" type="button"></button></td>
+                                    <td><button class="box" id= "67" type="button"></button></td>
+                                    <td><button class="box" id= "68" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="bigBox7" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "70" type="button"></button></td>
+                                    <td><button class="box" id= "71" type="button"></button></td>
+                                    <td><button class="box" id= "72" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "73" type="button"></button></td>
+                                    <td><button class="box" id= "74" type="button"></button></td>
+                                    <td><button class="box" id= "75" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "76" type="button"></button></td>
+                                    <td><button class="box" id= "77" type="button"></button></td>
+                                    <td><button class="box" id= "78" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                    <td>
+                        <div id="bigBox8" class="bigBox">
+                            <table class="smallTable" rules="all">
+                                <tr>
+                                    <td><button class="box" id= "80" type="button"></button></td>
+                                    <td><button class="box" id= "81" type="button"></button></td>
+                                    <td><button class="box" id= "82" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "83" type="button"></button></td>
+                                    <td><button class="box" id= "84" type="button"></button></td>
+                                    <td><button class="box" id= "85" type="button"></button></td>
+                                </tr>
+                                <tr>
+                                    <td><button class="box" id= "86" type="button"></button></td>
+                                    <td><button class="box" id= "87" type="button"></button></td>
+                                    <td><button class="box" id= "88" type="button"></button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
