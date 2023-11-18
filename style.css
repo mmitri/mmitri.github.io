@@ -1,0 +1,170 @@
+/* Global Styles */
+    #body,body,div,h1,h2,h3 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    #body{
+        background-color:#252525;
+    }
+    /* spacing on all sections */
+    #about, #skills, #portfolio{
+        color: white;
+        background-color:#252525;
+        margin-top: 4rem;
+        padding-top: 4rem;
+    }
+    #portfolio {
+        padding-bottom: 10rem;
+    }
+
+/* Navbar Styles*/
+    /* transition effect */
+    .navbar {
+        transition: background-color 1.0s ease; /* Adjust the duration and timing function as needed */
+    }
+    /* Style for the scrolled class */
+    .navbar.scrolled {
+        background-color: black;
+    }
+    /* Style for the links when navbar is scrolled */
+    .navbar.scrolled .navbar-nav .nav-link {
+        color: white;
+    }
+
+/* Hero Styles*/
+    /* Style for the typing animation */
+        .typing-animation {
+            display: inline-block;
+            overflow: hidden;
+            border-right: 2px solid white; /* Adjust thickness and color */
+            white-space: nowrap;
+            margin: 0;
+            letter-spacing: 2px; /* Adjust letter spacing */
+            animation: typing 3s steps(30, end), blink-caret 0.5s step-end infinite;
+        }
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+    /* hero image */
+        .bgimage {
+            height:100vh;
+            background: url('images/heroImage.jpg');
+            background-size:cover;
+            position:relative;
+        }
+    /* text above hero style*/
+        .hero_title {
+            font-size: 4rem;
+        }
+        .hero_desc {
+            font-size: 1.5rem;
+        }
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+/* About Styles*/
+    .imageAboutPage {
+        width: 100%;
+    }
+    .button-container {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    #downloadButton {
+        padding: 10px 20px;
+        background-color: #2771FF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+    #downloadButton:hover {
+        background-color: white;
+        color: #2771FF;
+    }
+
+/* Skills Styles */
+    #skills {
+        text-align: center;
+        padding: 50px 0;
+    }
+    .skills-container {
+        display: flex;
+        justify-content: space-around;
+    }
+    .skill-category {
+        width: 30%;
+    }
+    .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+    }
+    .visible {
+        opacity: 1;
+    }
+
+/* Portfolio Styles*/
+    .project-card {
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+    .project-card:hover {
+        transform: scale(1.05);
+    }
+    .bigger {
+        /* Adjust this to make the larger card taller */
+        height: 400px;
+    }
+    /* Ensure images fill the card */
+    .card-img-top {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    /* Position the card body (title) */
+    .card-body {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #000000; /* Add background color to improve text visibility */
+        color: white;
+        padding: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        box-sizing: border-box;
+    }
+    .bold-title {
+        font-weight: bold;
+    }
+
+/* Social Media Icons Styles */
+    .social-icons {
+        font-size: 36px;
+        cursor: pointer;
+    }
+    .fa-chess:hover,.fa-envelope:hover,.fa-linkedin:hover,.fa-github:hover{
+        color: #ffffff;
+    }
+    .fab, .fa {
+        color: #2771FF;
+    }
+/* Footer Styles */
+    #footer {
+        background-color: #000000;
+        text-align: center;
+    }
+
