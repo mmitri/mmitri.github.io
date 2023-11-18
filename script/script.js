@@ -31,3 +31,21 @@ window.onload = function() {
         typeWriter();
     }, 2000); // Delay time (milliseconds)
 };
+
+document.addEventListener('scroll', function(){
+    const trigger = document.querySelector('.skill-category');
+    const triggerPosition = trigger.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (triggerPosition < windowHeight * 0.75){
+        const items = document.querySelectorAll('.falling-item');
+        items.forEach((item, index)=>{
+            setTimeout(()=>{
+                item.classList.add('animate');
+            }, index * 400); // Adjust delay timing if needed
+        });
+
+        // Remove the scroll event listener after the animation triggers once
+        document.removeEventListener('scroll', this);
+    }
+});
