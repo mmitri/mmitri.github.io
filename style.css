@@ -106,14 +106,20 @@
     .skill-category {
         width: 30%;
     }
-    .fade-in {
+    .falling-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .falling-item{
         opacity: 0;
-        transition: opacity 1s ease-in-out;
+        transform: translateY(-100%);
+        transition: opacity 0.5s, transform 0.5s;
     }
-    .visible {
+    .falling-item.animate{
         opacity: 1;
+        transform: translateY(0);
     }
-
+    
 /* Portfolio Styles*/
     .project-card {
         border-radius: 10px;
@@ -167,4 +173,3 @@
         background-color: #000000;
         text-align: center;
     }
-
