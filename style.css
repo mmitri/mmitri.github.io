@@ -50,6 +50,13 @@
             50% { border-color: white; }
         }
     /* hero image */
+        @media (max-width: 600px) {
+            .bgimage {
+                /* Adjust image properties for mobile */
+                background-size: cover;
+                background-position: center;
+            }
+        }
         .bgimage {
             height: 100vh;
             max-width: 100%;
