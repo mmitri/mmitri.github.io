@@ -49,3 +49,18 @@ document.addEventListener('scroll', function(){
         document.removeEventListener('scroll', this);
     }
 });
+
+function downloadFile() {
+    const fileUrl = 'files/markmitriResume.pdf'; // Replace with your file's URL or path
+    const fileName = 'markmitriResume.pdf'; // Replace with the desired file name for download
+
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.download = fileName;
+    link.target = '_blank'; // Optional: Opens the link in a new tab
+
+    document.body.appendChild(link);
+    link.click();
+
+    document.body.removeChild(link);
+}
