@@ -50,18 +50,12 @@
             50% { border-color: white; }
         }
     /* hero image */
-        @media (max-width: 767px){
-            .bgimage{
-                /* Adjust image properties for mobile */
-                background-size: cover;
-                background-position: center;
-            }
-        }
         .bgimage {
-            height:100vh;
+            height: 100vh;
+            max-width: 100%;
             background: url('images/heroImage.jpg');
-            background-size:cover;
-            position:relative;
+            background-size: cover;
+            position: relative;
         }
     /* text above hero style*/
         .hero_title {
