@@ -15,6 +15,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body id="body">
@@ -54,23 +55,23 @@
     
     <section id="about" class="text-center">
         <div class="about-overlay"></div> <!-- Overlay for smooth transition -->
-        <h2>About Me</h2>
-        <p>
-            I'm Mark Mitri, a passionate Computer Engineering graduate from Lehigh University, NY. With a solid foundation in software development, hardware management, and project leadership, I thrive on solving complex technical challenges.
-            <br><br>
-            My experience spans successful transitions in enterprise software, meticulous data management, and overseeing technical support for hundreds of students. Proficient in various programming languages and adept at managing multidisciplinary projects, I bring an innovative and detail-oriented approach to every task.
-            <br><br>
-            From leading aerodynamics projects in automotive engineering to spearheading social media app development, I've honed a diverse skill set while fostering collaborative environments for impactful outcomes.
-        </p>
+        <div class="about-content">
+            <h1 class="about-me"></h1>
+            <div class="about-description">
+                <p>I'm Mark Mitri, a passionate Computer Engineering graduate from Lehigh University. I thrive on solving complex technical challenges. </p>
+                <p>My experience spans successful transitions in enterprise software, meticulous data management, and overseeing technical support for hundreds of students.</p>
+                <p>Proficient in various programming languages and adept at managing multidisciplinary projects, I bring an innovative and detail-oriented approach to every task.</p>
+                <p>From leading aerodynamics projects in automotive engineering to spearheading social media app development, I've honed a diverse skill set while fostering collaborative environments for impactful outcomes.</p>
+            </div>
+        </div>
     </section>
 
     <div class="button-container">
-        <button id=downloadButton onclick="downloadFile()">Download Resume</button>
+        <button id=downloadButton onclick="downloadFile()">Resume</button>
     </div>
 
     <section id="skills" class="text-center">
-        <h2>Skills</h2>
-        <p></p>
+        <h2>Skills</h2><br><p></p>
         <div class="skills-container" class="fade-in-text">
             <div class="skill-category">
                 <h3>Electrical</h3>

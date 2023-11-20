@@ -3,9 +3,12 @@ const navLinks = document.querySelectorAll('.nav-item');
 const menuToggle = document.getElementById('navbarSupportedContent');
 // For the smooth transition effect
 const header = document.querySelector('.navbar');
-const text = "a computer engineer from New York";
-const textContainer = document.querySelector('.typing-animation');
-let i = 0;
+const textContainerHero = document.querySelector('.typing-animation');
+const textHero = "a computer engineer from New York";
+const textContainerAbout = document.querySelector('.about-me');
+const textAbout = "About Me";
+
+let i = 0; let j = 0;
 
 // Function to adjust navbar animation
 window.addEventListener('scroll', () => {
@@ -17,20 +20,50 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
-// Function to perform the typing animation
-function typeWriter() {
-    if (i < text.length) {
-        textContainer.textContent += text.charAt(i);
-        i++;
-        setTimeout(typeWriter, 100); // Typing speed (adjust if needed)
-    }
-}
 // Delay the start of the typing animation
 window.onload = function() {
     setTimeout(() => {
-        typeWriter();
+        typeWriterHero();
     }, 2000); // Delay time (milliseconds)
 };
+// Function to perform the typing animation for Hero Text
+function typeWriterHero() {
+    if (i < textHero.length) {
+        textContainerHero.textContent += textHero.charAt(i);
+        i++;
+        setTimeout(typeWriterHero, 90); // Typing speed (adjust if needed)
+    }
+}
+// Function to perform the typing animation for About Me Text
+function typeWriterAbout() {
+    if (j < textAbout.length) {
+        textContainerAbout.textContent += textAbout.charAt(j);
+        j++;
+        setTimeout(typeWriterAbout, 210); // Typing speed (adjust if needed)
+    }
+}
+// Function to check if the about section is in the viewport
+function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+// Function to handle scroll event
+function handleScroll() {
+    const aboutSection = document.getElementById('about');
+
+    if (isElementInViewport(aboutSection)) {
+        // Execute the typing animation when the About section is in the viewport
+        typeWriterAbout();
+        window.removeEventListener('scroll', handleScroll); // Remove the scroll event listener after executing the animation
+    }
+}
+// Add scroll event listener to trigger the typing animation
+window.addEventListener('scroll', handleScroll);
 
 document.addEventListener('scroll', function(){
     const trigger = document.querySelector('.skill-category');
