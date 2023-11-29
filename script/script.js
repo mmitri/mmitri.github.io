@@ -7,8 +7,10 @@ const textContainerHero = document.querySelector('.typing-animation');
 const textHero = "a computer engineer from New York";
 const textContainerAbout = document.querySelector('.about-me');
 const textAbout = "About Me";
+const textContainerSkills = document.querySelector('.skills');
+const textSkills = "Skills";
 
-let i = 0; let j = 0;
+let i = 0; let j = 0; let k = 0;
 
 // Function to adjust navbar animation
 window.addEventListener('scroll', () => {
@@ -39,7 +41,15 @@ function typeWriterAbout() {
     if (j < textAbout.length) {
         textContainerAbout.textContent += textAbout.charAt(j);
         j++;
-        setTimeout(typeWriterAbout, 210); // Typing speed (adjust if needed)
+        setTimeout(typeWriterAbout, 230); // Typing speed (adjust if needed)
+    }
+}
+// Function to perform the typing animation for Skills Text
+function typeWriterSkills() {
+    if (k < textSkills.length) {
+        textContainerSkills.textContent += textSkills.charAt(k);
+        k++;
+        setTimeout(typeWriterSkills, 230); // Typing speed (adjust if needed)
     }
 }
 // Function to check if the about section is in the viewport
@@ -55,7 +65,6 @@ function isElementInViewport(el) {
 // Function to handle scroll event
 function handleScroll() {
     const aboutSection = document.getElementById('about');
-
     if (isElementInViewport(aboutSection)) {
         // Execute the typing animation when the About section is in the viewport
         typeWriterAbout();
@@ -64,6 +73,20 @@ function handleScroll() {
 }
 // Add scroll event listener to trigger the typing animation
 window.addEventListener('scroll', handleScroll);
+
+// Function to check if the skills section is in the viewport
+function handleSkillsScroll() {
+    const skillsSection = document.getElementById('skills');
+
+    if (isElementInViewport(skillsSection)) {
+        // Execute the typing animation when the Skills section is in the viewport
+        typeWriterSkills();
+        window.removeEventListener('scroll', handleSkillsScroll); // Remove the scroll event listener after executing the animation
+    }
+}
+
+// Add scroll event listener to trigger the typing animation for Skills
+window.addEventListener('scroll', handleSkillsScroll);
 
 document.addEventListener('scroll', function(){
     const trigger = document.querySelector('.skill-category');
