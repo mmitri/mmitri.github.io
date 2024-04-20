@@ -107,12 +107,12 @@
         width: 100%;
     }
     .about-me{
-        text-align: left;
+        text-align: center;
         font-weight: bold;
         padding: 30px;
     }
     .about-description{
-        text-align: left;
+        text-align: center;
         font-size: 1.1em;
         padding: 30px;
     }
@@ -136,7 +136,7 @@
 
 /* Skills Styles */
     .skills{
-        text-align: left;
+        text-align: center;
         font-weight: bold;
         padding: 30px;
     }
